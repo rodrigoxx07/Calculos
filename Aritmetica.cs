@@ -10,18 +10,18 @@ namespace Calculos
     /// Implementa operações aritmeticas
     /// Operação soma e subtração de dois nrs
     /// </summary>
-    internal class Aritmetica
+    internal static class Aritmetica
     {
         /// <summary>
         /// Tipo de Conversão de Teperatura
         /// </summary>
-        public enum ConversaoTemperatura
+        public static enum ConversaoTemperatura
         {
             Nulo = 0,
             CelsiusFahrenheit,
             FahrenheitCelsius
         }
-        public int Somar(int x, int y)
+        public static int Somar(int x, int y)
         {
             return x + y;
         }
@@ -31,12 +31,12 @@ namespace Calculos
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <returns></returns>
-        public int Subtrair(int x, int y)
+        public static int Subtrair(int x, int y)
         {
             return x - y;
         }
 
-        public double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
+        public static double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
         {
             if (conversao == ConversaoTemperatura.CelsiusFahrenheit)
             {
