@@ -12,6 +12,15 @@ namespace Calculos
     /// </summary>
     internal class Aritmetica
     {
+        /// <summary>
+        /// Tipo de Conversão de Teperatura
+        /// </summary>
+        public enum ConversaoTemperatura
+        {
+            Nulo = 0,
+            CelsiusFahrenheit,
+            FahrenheitCelsius
+        }
         public int Somar(int x, int y)
         {
             return x + y;
@@ -26,5 +35,19 @@ namespace Calculos
         {
             return x - y;
         }
+
+        public double ConverterTemperatura(ConversaoTemperatura conversao, double temperatura)
+        {
+            if (conversao == ConversaoTemperatura.CelsiusFahrenheit)
+            {
+                return (temperatura * 1.800 + 32);
+            }
+            else if (conversao ==ConversaoTemperatura.FahrenheitCelsius)
+            {
+                return((temperatura - 32) / 1.800);
+            }
+            return -1;
+        }
+
     }
 }
