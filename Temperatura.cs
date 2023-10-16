@@ -51,7 +51,7 @@ namespace Calculos
         /// <param name="conversao"></param>
         /// <param name="distancia"></param>
         /// <returns></returns>
-        public static double ConverterDistancias(ConversaoDistancia conversao, double distancia)
+        public static double ConverterDistancias(ConversaoDistancias conversao, double distancia)
         {
             if (conversao == ConversaoDistancias.MetrosMilhas)
             {
