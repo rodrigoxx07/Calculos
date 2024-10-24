@@ -27,8 +27,9 @@ namespace Calculos
         /// <param name="y"></param>
         /// <returns></returns>
         public static int Subtrair(int x, int y)
+ ///altecaroes realizadas para testar a substração.       
         {
-            return x - y;
+            return x * y;
         }
         /// <summary>
         /// Calcula a multiplicação
